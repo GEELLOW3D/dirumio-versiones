@@ -15,11 +15,13 @@
 <p align="center">
   <img alt="Versión alfa" src="https://img.shields.io/badge/versi%C3%B3n-alfa-f2683c?style=flat-square">
   <img alt="Windows 10 y 11" src="https://img.shields.io/badge/Windows-10%20%7C%2011-2a2521?style=flat-square">
+  <img alt="macOS con Apple Silicon" src="https://img.shields.io/badge/macOS-Apple%20Silicon-2a2521?style=flat-square">
   <img alt="Con clave de activación" src="https://img.shields.io/badge/clave-de%20activaci%C3%B3n-2a2521?style=flat-square">
 </p>
 
 <p align="center">
   <a href="https://github.com/GEELLOW3D/dirumio-versiones/releases/latest"><img alt="Descargar para Windows" src="https://img.shields.io/badge/Descargar_para_Windows-f2683c?style=for-the-badge"></a>
+  <a href="https://github.com/GEELLOW3D/dirumio-versiones/releases/latest"><img alt="Descargar para Mac" src="https://img.shields.io/badge/Descargar_para_Mac-ece7e0?style=for-the-badge"></a>
 </p>
 
 <p align="center">
@@ -92,14 +94,29 @@ estabas.
 
 ## Instalar
 
-1. Bajá `Dirumio-Setup-<versión>.exe` desde
-   **[la última versión](https://github.com/GEELLOW3D/dirumio-versiones/releases/latest)**.
-2. Abrilo. Como todavía no está firmado, Windows puede mostrar "Windows protegió su PC": tocá
+Todo se baja de **[la última versión](https://github.com/GEELLOW3D/dirumio-versiones/releases/latest)**. Al abrir
+Dirumio por primera vez, pegá tu clave: sirve en todas tus computadoras.
+
+### Windows 10 u 11
+
+1. Bajá `Dirumio-Setup-<versión>.exe` y abrilo.
+2. Como todavía no está firmado, Windows puede mostrar "Windows protegió su PC": tocá
    **Más información › Ejecutar de todas formas**.
 3. Elegí la carpeta y terminá la instalación (no pide permisos de administrador).
-4. Abrí Dirumio y pegá tu clave. Sirve en todas tus computadoras.
 
-Las versiones de **macOS** (`.dmg`) y **Linux** (`.AppImage` o `.deb`) están en prueba.
+### Mac con Apple Silicon (M1 o posterior)
+
+1. Bajá `Dirumio-<versión>-arm64.dmg`, abrilo y arrastrá **Dirumio** a **Aplicaciones**.
+2. Como todavía no está firmado por Apple, la primera vez la Mac lo bloquea (dice que "está dañado" o que no puede
+   verificar al desarrollador). Abrí la **Terminal** y pegá esto una sola vez:
+
+   ```bash
+   xattr -cr /Applications/Dirumio.app
+   ```
+
+3. Abrí Dirumio desde Aplicaciones.
+
+Linux: próximamente.
 
 ## Qué necesitás
 
@@ -110,8 +127,13 @@ Las versiones de **macOS** (`.dmg`) y **Linux** (`.AppImage` o `.deb`) están en
 
 ## Actualizaciones
 
-Dirumio se actualiza solo: baja las versiones nuevas en segundo plano y te ofrece reiniciar; si no reiniciás, se
-instala al cerrar la app. Tus tableros y tu configuración se mantienen.
+En **Windows**, Dirumio se actualiza solo: baja las versiones nuevas en segundo plano y te ofrece reiniciar; si no
+reiniciás, se instala al cerrar la app.
+
+En **Mac**, mientras no esté firmado por Apple, las versiones nuevas se bajan a mano de esta página: instalala encima de
+la anterior y repetí el paso de la Terminal.
+
+En los dos, tus tableros y tu configuración se mantienen.
 
 ---
 
