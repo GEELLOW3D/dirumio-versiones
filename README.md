@@ -104,9 +104,10 @@ Dirumio por primera vez, pegá tu clave: sirve en todas tus computadoras.
    **Más información › Ejecutar de todas formas**.
 3. Elegí la carpeta y terminá la instalación (no pide permisos de administrador).
 
-### Mac con Apple Silicon (M1 o posterior)
+### Mac
 
-1. Bajá `Dirumio-<versión>-arm64.dmg`, abrilo y arrastrá **Dirumio** a **Aplicaciones**.
+1. Bajá el `.dmg` de tu Mac: `Dirumio-<versión>-arm64.dmg` si tiene Apple Silicon (M1 o posterior), o
+   `Dirumio-<versión>-x64.dmg` si tiene Intel (desde la 0.2.0). Abrilo y arrastrá **Dirumio** a **Aplicaciones**.
 2. Como todavía no está firmado por Apple, la primera vez la Mac lo bloquea (dice que "está dañado" o que no puede
    verificar al desarrollador). Abrí la **Terminal** y pegá esto una sola vez:
 
